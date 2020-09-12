@@ -2,7 +2,7 @@
 					//creation de la connexion
 	$host = "localhost";
 $user = "root";
-$pass = "";
+$pass = "password";
 $dbname = "db_scolarite";
 
 	$conn =new mysqli($host,$user,$pass,$dbname) or die(mysqli_connect_error());
