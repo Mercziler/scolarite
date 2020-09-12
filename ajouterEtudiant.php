@@ -1,7 +1,7 @@
 <?php
 					//creation de la connexion
 	$host = "localhost";
-$user = "root";
+$user = "user";
 $pass = "password";
 $dbname = "db_scolarite";
 
