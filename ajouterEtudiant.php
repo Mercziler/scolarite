@@ -5,17 +5,17 @@ $user = getenv('MYSQL_USER');
 $pass = getenv('MYSQL_PASSWORD');
 $dbname = getenv('MYSQL_DATABASE');
 
-echo $user;
+/*echo $user;
 echo $pass;
 echo $host;
-echo $dbname;
+echo $dbname;*/
 
 	$conn =new mysqli($host,$user,$pass,$dbname) or die(mysqli_connect_error());
 
 
 $nom=$_POST['nom'];
 	$email=$_POST['email'];
-	$req="INSERT into Etudiants(Nom,mail) values ('$nom','$email')";
+	$req="INSERT into etudiants(Nom,mail) values ('$nom','$email')";
 	//execution de la requete
 	mysqli_query($conn,$req) or die (mysqli_error($conn));
 	//affichage du resultat dans un tableau!//
