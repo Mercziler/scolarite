@@ -1,9 +1,8 @@
 <?php
 					//creation de la connexion
-	$host = "localhost";
-$user = "user";
-$pass = "password";
-$dbname = "db_scolarite";
+$user = getenv('MYSQL_USER');
+$pass = getenv('MYSQL_PASSWORD');
+$dbname = getenv('MYSQL_DATABASE');
 
 	$conn =new mysqli($host,$user,$pass,$dbname) or die(mysqli_connect_error());
 
