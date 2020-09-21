@@ -42,7 +42,6 @@ function plz(){
 		</tr>
 		<tr>
 			<td>photo</td>
-			<td><img src="images/<?php echo($nomphoto)?>"></td>
 		</tr>
 	</table>	
 </body>
