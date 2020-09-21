@@ -1,9 +1,9 @@
 <? php
 				//creation de la connexion
-$host = getenv('OPENSHIFT_MYSQL_DB_HOST');
-$user = getenv('OPENSHIFT_MYSQL_DB_USERNAME');
-$pass = getenv('OPENSHIFT_MYSQL_DB_PASSWORD');
-$dbname = getenv('OPENSHIFT_GEAR_NAME');
+//$host = getenv('OPENSHIFT_MYSQL_DB_HOST');
+$user = getenv('MYSQL_USER');
+$pass = getenv('MYSQL_PASSWORD');
+$dbname = getenv('MYSQL_DATABASE');
 
 
 	$conn=mysql_connect("localhost","root","") or die(mysql_error());
