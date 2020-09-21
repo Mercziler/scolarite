@@ -1,6 +1,6 @@
 <? php
 				//creation de la connexion
-//$host = getenv('OPENSHIFT_MYSQL_DB_HOST');
+$host = 127.0.0.1;
 $user = getenv('MYSQL_USER');
 $pass = getenv('MYSQL_PASSWORD');
 $dbname = getenv('MYSQL_DATABASE');
