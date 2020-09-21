@@ -1,6 +1,6 @@
 <?php
 
-$host = 'https://127.0.0.1:8443/';				//creation de la connexion
+$host = getenv('MYSQL_SERVICE_HOST');				//creation de la connexion
 $user = getenv('MYSQL_USER');
 $pass = getenv('MYSQL_PASSWORD');
 $dbname = getenv('MYSQL_DATABASE');
