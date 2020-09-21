@@ -1,12 +1,14 @@
 <?php
 
-$host = '127.0.0.1';				//creation de la connexion
+$host = '127.0.0.1:8443';				//creation de la connexion
 $user = getenv('MYSQL_USER');
 $pass = getenv('MYSQL_PASSWORD');
 $dbname = getenv('MYSQL_DATABASE');
 
 echo $user;
 echo $pass;
+echo $host;
+echo $dbname;
 
 	$conn =new mysqli($host,$user,$pass,$dbname) or die(mysqli_connect_error());
 
