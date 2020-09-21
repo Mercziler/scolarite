@@ -9,14 +9,7 @@ $dbname = getenv('MYSQL_DATABASE');
 
 $nom=$_POST['nom'];
 	$email=$_POST['email'];
-	$nomphoto=$_FILES['photo']['name']; 
-		//recuperation du fichier dans la mémoire temporaire
-	$file_tmp_name=$_FILES['photo']['tmp_name'];
-		//recupération et deplacement de la photo dans le dossier images
-	move_uploaded_file($file_tmp_name,"./images/$nomphoto");
-		//requete d'insertion d'un étudiant dans la table etudiant
-
-	$req="INSERT into Etudiants(Nom,mail,Photo) values ('$nom','$email','$nomphoto')";
+	$req="INSERT into Etudiants(Nom,mail) values ('$nom','$email')";
 	//execution de la requete
 	mysqli_query($conn,$req) or die (mysqli_error($conn));
 	//affichage du resultat dans un tableau!//
