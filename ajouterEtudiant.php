@@ -1,7 +1,7 @@
 <?php
 
 $host = '127.0.0.1';				//creation de la connexion
-$user = 'kouakou';
+$user = getenv('MYSQL_USER');
 $pass = getenv('MYSQL_PASSWORD');
 $dbname = getenv('MYSQL_DATABASE');
 
