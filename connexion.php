@@ -6,7 +6,7 @@ $pass = getenv('MYSQL_PASSWORD');
 $dbname = getenv('MYSQL_DATABASE');
 
 
-	$conn=mysql_connect("localhost","root","") or die(mysql_error());
+	$conn=mysql_connect("localhost",$user,$dbname) or die(mysql_error());
 	mysql_select_db("db_scolarite",$conn) or die(mysql_error());
 	
 ?>
