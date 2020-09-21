@@ -4,7 +4,7 @@ $user = getenv('MYSQL_USER');
 $pass = getenv('MYSQL_PASSWORD');
 $dbname = getenv('MYSQL_DATABASE');
 
-	$conn =new mysqli($host,$user,$pass,$dbname) or die(mysqli_connect_error());
+	$conn =new mysqli('localhost',$user,$pass,$dbname) or die(mysqli_connect_error());
 
 
 $nom=$_POST['nom'];
